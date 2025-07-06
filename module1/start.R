@@ -1,0 +1,11 @@
+R.home("bin")
+options(repos = c(CRAN = "https://cloud.r-project.org/"))
+install.packages("faraway")
+data(package="faraway")
+data(coagulation, package="faraway")
+ls()
+coagulation
+plot(coag ~ diet, data=coagulation)
+data(worldcup, package="faraway")
+mean(worldcup$Time)
+summary(coagulation)
